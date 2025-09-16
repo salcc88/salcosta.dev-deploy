@@ -49,30 +49,71 @@
     
     <!-- Structured Data -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "https://salcosta.dev",
-      "name": "Sal Costa",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://salcosta.dev/og-image.png",
-        "width": 1200,
-        "height": 1200
-      },
-      "sameAs": [
-        "https://linkedin.com/in/salcc",
-        "https://behance.net/salcc"
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://salcosta.dev#person",
+            "name": "Sal Costa",
+            "url": "https://salcosta.dev",
+            "image": "https://salcosta.dev/og-image.png",
+            "jobTitle": "Frontend Developer & UX Designer",
+            "sameAs": [
+              "https://linkedin.com/in/salcc",
+              "https://behance.net/salcc",
+              "https://github.com/salcc88"
+            ]
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://salcosta.dev#organization",
+            "name": "Sal Costa",
+            "url": "https://salcosta.dev",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://salcosta.dev/og-image.png",
+              "width": 1200,
+              "height": 1200
+            },
+            "sameAs": [
+              "https://linkedin.com/in/salcc",
+              "https://behance.net/salcc",
+              "https://github.com/salcc88"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://salcosta.dev#website",
+            "url": "https://salcosta.dev",
+            "name": "Sal Costa",
+            "publisher": { "@id": "https://salcosta.dev#organization" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://salcosta.dev#webpage",
+            "url": "https://salcosta.dev",
+            "name": "Home",
+            "isPartOf": { "@id": "https://salcosta.dev#website" },
+            "about": { "@id": "https://salcosta.dev#person" },
+            "publisher": { "@id": "https://salcosta.dev#organization" },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://salcosta.dev/og-image.png",
+              "width": 1200,
+              "height": 1200
+            }
+          }
+        ]
+      }
     </script>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-DqbZA3G5.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CYWS0ASS.css">
+    <script type="module" crossorigin src="/assets/index-DreXvqOr.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-0Ms7bw16.css">
   </head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD5KPZX2NM"></script>
